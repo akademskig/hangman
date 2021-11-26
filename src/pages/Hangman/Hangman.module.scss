@@ -1,0 +1,149 @@
+@import "../../styles/variables";
+
+.root {
+  max-width: 1000px;
+  padding: 2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > h2 {
+    margin-bottom: 0.5rem;
+  }
+   > p {
+     margin-top: 0.2rem;
+     margin-bottom: 1.5rem
+   }
+}
+
+.lettersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 1.3rem;
+  margin-top: 4rem;
+}
+.lettersRoot {
+  min-height: 280px;
+}
+
+.letterWrapper {
+  border: solid 1px $purple-main;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  margin-left: 0.2rem;
+  margin-bottom: 0.2rem;
+  height: 35px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.letter {
+  display: inline-block;
+  line-height: 20px;
+  margin-top: -2px;
+  vertical-align: middle;
+  align-items: center;
+}
+.space {
+  border: 0;
+}
+.hidden {
+  display: none;
+}
+.keyboard {
+  margin: auto;
+  max-width: 484px;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+}
+.keyboardLetter {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: solid 2px $blue-main;
+  padding: 0.8rem;
+  box-sizing: border-box;
+  line-height: 1rem;
+  margin-left: 0.2rem;
+  font-size: 1.3rem;
+  background-color: transparent;
+  text-transform: capitalize;
+  margin-bottom: 0.2rem;
+  user-select: none;
+}
+.disabled {
+  border: solid 2px $blue-light;
+}
+.errorCounter {
+  display: flex;
+  margin: auto;
+  padding: 0.2rem;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px $error-light;
+  border-radius: 4px;
+  width: 100px;
+}
+.errorNum {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.loaderRoot {
+  margin-top: 4rem;
+  height: 200px;
+  display: flex;
+}
+.loader {
+  margin: 2rem auto;
+  border: 12px solid #f3f3f3; /* Light grey */
+  border-top: 12px solid $blue-light; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+.restartBtn {
+  cursor: pointer;
+  margin: auto;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  background-color: $blue-main;
+  color: white;
+  border-color: $blue-light;
+  border-radius: 4px;
+  text-transform: uppercase;
+
+  svg {
+    margin-left: 0.2rem;
+  }
+  &:hover {
+    background-color: $blue-light;
+  }
+}
+.error {
+  border: 2px solid $error-dark;
+  background-color: $error-light;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 200px;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+
+.root {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  padding: 2rem;
+  flex-direction: column;
+  margin: auto;
+  h2,
+  p {
+    text-align: center;
+  }
+}
+.table {
+  margin: auto;
+  max-width: 500px;
+  width: 60%;
+  min-width: 300px;
+  border-collapse: collapse;
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #b0c6d6;
+  }
+}
+.myScore {
+  border: 3px solid rgb(98, 243, 98);
+}
+.newGameButton {
+  width: fit-content;
+  min-width: 122;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: $purple-main;
+  border-color: $purple-light;
+  border-radius: 4px;
+
+  svg {
+    margin-right: 0.3rem;
+  }
+  &:hover {
+    background-color: $purple-light;
+  }
+}

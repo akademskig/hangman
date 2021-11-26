@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+  height: 60vh;
+}
+.input {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+.inputRoot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.label {
+  margin-bottom: 0.2rem;
+}
+.button {
+  align-self: center;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-color: $purple-light;
+  color: white;
+  background-color: $purple-main;
+
+  svg {
+    margin-left: 0.4rem;
+  }
+  &:hover {
+    background-color: $purple-light;
+  }
+}
