@@ -1,15 +1,15 @@
 type Params = {
   errors: number
-  quoteLength: number
-  uniqueLetters: number
-  solvingTime: number
+  length: number
+  uniqueCharacters: number
+  duration: number
 }
 
 const calculateScore = ({
   errors,
-  quoteLength,
-  uniqueLetters,
-  solvingTime,
+  length,
+  uniqueCharacters,
+  duration,
 }: Params) => {
   return Math.round(100 / (1 + errors))
 }

@@ -6,8 +6,7 @@ import { fetchScores, startNewGame } from "../../redux/actions/asyncActions"
 import { StoreShape } from "../../redux/store"
 import calculateScore from "../../utils/calculateScore"
 import styles from "./ScoreBoard.module.scss"
-import { BiArrowBack } from 'react-icons/bi'
-
+import { BiArrowBack } from "react-icons/bi"
 
 type Props = {
   endGameData: any
@@ -44,7 +43,8 @@ const ScoreBoard = ({ endGameData, scores }: Props) => {
   return (
     <div className={styles.root}>
       <button onClick={onStartNewGame} className={styles.newGameButton}>
-        <BiArrowBack size={20}/>{"New Game"}
+        <BiArrowBack size={20} />
+        {"New Game"}
       </button>
       <h2> Score board</h2>
       <table className={styles.table}>

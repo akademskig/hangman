@@ -70,9 +70,9 @@ function gameReducer(state = initialState, action: AnyAction) {
           gameId: state.gameId,
           userName: state.name,
           errors: action?.payload?.endGame?.errors,
-          quoteLength: state.quoteData.quoteLength,
-          uniqueLetters: state.quoteData.uniqueLetters,
-          solvingTime: Date.now() - state.startTime,
+          length: state.quoteData.quoteLength,
+          uniqueCharacters: state.quoteData.uniqueLetters,
+          duration: Date.now() - state.startTime,
         },
       }
     case actions.END_GAME_ERROR:
